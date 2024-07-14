@@ -1,10 +1,4 @@
 
-    
-
-
-
-
-
 function generateRandomText() {
   var characters = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
   var randomText = "";
@@ -32,8 +26,6 @@ ctx.textAlign = "center";
 ctx.textBaseline = "middle";
 ctx.fillText(captchaText, canvas.width/2, canvas.height/2);
    
-
-
 /* DECLARACIÓNES PARA EL DOM   */
 
 var email = document.getElementById("e");

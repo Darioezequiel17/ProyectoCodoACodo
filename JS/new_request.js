@@ -1,9 +1,4 @@
-
-    
-
-
-
-
+ 
 function generateRandomText() {
   var characters = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
   var randomText = "";
@@ -20,8 +15,6 @@ var captchaText = generateRandomText();
 var canvas = document.getElementById("captchaCanvas");
 var ctx = canvas.getContext("2d");
 
-
-   
 // PROPIEDADES DEL CANVAS
 ctx.font = "60px Arial";
 ctx.fillStyle = "#9000ff4d"
@@ -40,10 +33,6 @@ var nombre = document.getElementById("tx");
 var age = document.getElementById("edad");
 var userInput = document.getElementById('captchaInput');
 var entrar = document.getElementById("intro");
-
-
-
-
 
 /* BORRA EL TEXT-AREA */
 var txarea = document.getElementById("area");
@@ -64,7 +53,7 @@ function validar() {
 
   if(!regexEmail.test(email.value) == true){
       alert(" Correo electrónico Inválido ")  ;
-      checkeo = false;
+    checkeo = false;
       
   }
   else{
