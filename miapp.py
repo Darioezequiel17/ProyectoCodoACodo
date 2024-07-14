@@ -12,6 +12,8 @@ from werkzeug.utils import secure_filename
 import os
 import time
 
+import bd
+
 #------------------APP-----------------------
 app =Flask(__name__)
 CORS(app)
@@ -94,7 +96,7 @@ class Personas:
 #                       PROGRAMA PRINCIPAL 
 # ------------------------------------------------------------------
 #personas = Personas(host='localhost', user='root', password='', database ='miapp')
-personas=Personas(host='DarioLitterio.mysql.pythonanywhere-services.com', user='DarioLitteriot', password='miAppAño24', database ='DarioLitteriot$miapp')
+personas=Personas(host= bd.host, user=bd.user, password=bd.password, database=bd.database)
 
 #Carpeta para guardado de imagenes
 #ruta_destino= '.\HTMLS\Img'

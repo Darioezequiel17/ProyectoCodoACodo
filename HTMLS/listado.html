@@ -38,7 +38,7 @@
     </div>
 
     <script>
-        const URL = 'http://127.0.0.1:5000/'
+        const URL = 'DarioLitterio.mysql.pythonanywhere-services.com/'
 
         //al subir al servidor deberan utilizar las siguientes rutas.
         //USUARIO debe ser remplazado
@@ -66,7 +66,7 @@
                        '<td>' + persona.nombre + '</td>' +
                        '<td>' + persona.edad + '</td>' +
                        //Mostrar miniatura de la imagen
-                       '<td><img src="../HTMLS/Img{{ persona.imagen_url }}" style="width: 100px;"></td>'
+                       '<td><img src="./home/DarioLitterio/mysite/static/imagenes{{ persona.imagen_url }}" style="width: 100px;"></td>'
                        //Al subir al servidor, la ruta cambia. USUARIO debe ser remplazado por el nombre de usuario en phyntonanywhere
                        //'<td><scr=//http:www.phytonanywhere.com/user/USUARIO/....../Image + 'alt="Imagen de la persona" style="whidth 100px"></td>'
                        tabla_personas.appendChild(fila)
